@@ -1,0 +1,65 @@
+.features 
+	background-color: #fff
+	padding: 40px 20px
+	border-bottom: 1px solid #d8dbde
+
+.features-wrapper 
+	max-width: 1168px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.features-container 
+	width: 100%
+	display: flex
+	justify-content: space-between
+	gap: 20px
+
+.features-container-item 
+	flex: 1 1 361px
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.features-container-icon
+	width: 32px
+	height: 32px
+	box-sizing: content-box
+	margin: 16px
+
+.features-icon-1
+	background: url(../../svg/features_product.svg) no-repeat center / contain
+
+.features-icon-2
+	background: url(../../svg/features_web.svg) no-repeat center / contain
+
+.features-icon-3
+	background: url(../../svg/features_mobile.svg) no-repeat center / contain
+
+.features-container-title
+	text-align: center
+
+.features-container-paragraph
+	text-align: center
+
+
+
+@media screen and (max-width: 768px) 
+	.features-container
+		flex-direction: column
+		align-items: center
+		
+	.features-container-item 
+		flex: 0 1 auto
+		max-width: 361px
+
+	
+
+@media screen and (max-width: 576px) 
+	.features 
+		padding: 10px 20px
+	
+	.features-container-icon
+		width: 24px
+		height: 24px

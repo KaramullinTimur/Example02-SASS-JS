@@ -1,0 +1,66 @@
+.awards 
+	background-color: #fff
+	padding: 40px 20px
+	border-bottom: 1px solid #d8dbde
+	
+.awards-wrapper 
+	max-width: 1168px
+	margin: 0 auto
+	display: flex
+
+.awards-content
+	width: 400px
+	flex-shrink: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.awards-content-title 
+	line-height: 64px
+
+.awards-content-paragraph 
+	max-width: 264px
+	
+.awards-pic
+	flex-shrink: 1
+
+.awards-pic-img 
+	width: 100%
+
+
+
+@media screen and (max-width: 992px) 
+	.awards-content
+		width: 300px
+
+
+
+@media screen and (max-width: 768px) 
+	.awards-wrapper 
+		flex-direction: column
+		align-items: center
+		gap: 20px
+
+	.awards-content
+		align-items: center
+
+	.awards-content-title 
+		line-height: 32px
+
+	.awards-content-paragraph
+		text-align: center
+
+	.awards-pic
+		width: 70%
+
+
+
+@media screen and (max-width: 768px) 
+	.awards-content-title 
+		line-height: 24px
+
+
+	
+@media screen and (max-width: 576px) 
+	.awards
+		padding: 10px 20px

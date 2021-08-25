@@ -1,0 +1,73 @@
+.about 
+	background-color: #fff
+	padding: 40px 20px
+	border-bottom: 1px solid #d8dbde
+
+.about-wrapper 
+	max-width: 1304px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: center
+	gap: 20px
+
+.about-content 
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+
+.about-content-tag 
+	font-family: Arial
+	font-weight: bold
+	font-size: 18px
+	line-height: 21px
+	text-transform: uppercase
+
+.about-pic 
+	max-height: 514px
+	position: relative
+
+.about-pic-img 
+	width: 100%
+
+.about-pic-arrow-right
+	position: absolute
+	left: 5.5%
+	top: 47.7%
+
+.about-pic-arrow-left
+	position: absolute
+	right: 5.5%
+	top: 47.7%
+
+
+
+@media screen and (max-width: 992px) 
+	.about-wrapper 
+		flex-direction: column
+
+	.about-content 
+		align-items: center
+
+	.about-content-title 
+		text-align: center
+
+	.about-content-paragraph 
+		text-align: center
+
+
+
+@media screen and (max-width: 768px) 
+	.about-content-tag 
+		font-size: 14px
+		line-height: 18px
+
+
+
+@media screen and (max-width: 576px) 
+	.about 
+		padding: 10px 20px
+
+	.about-content-tag 
+		font-size: 10px
+		line-height: 14px

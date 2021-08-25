@@ -1,0 +1,88 @@
+@keyframes shake
+	0%
+		transform: rotate(3deg)
+	50%
+		transform: rotate(-3deg)
+	100%
+		transform: rotate(0deg)
+	
+.button-close
+	font-size: 36px
+	color: #000
+	background: transparent
+	border: 0
+	cursor: pointer
+
+.button-close:focus, 
+.button-close:hover
+	animation: shake .2s
+
+	
+.button-more
+	padding: 20px 40px
+	border-radius: 4px
+	border: 0
+	background-color: #000
+	color: #fff
+	font-weight: bold
+	font-size: 18px
+	line-height: 21px
+	text-align: center
+	letter-spacing: 0.02em
+	text-transform: uppercase
+	cursor: pointer
+
+.button-more:focus,
+.button-more:hover 
+	animation: shake .2s
+
+.button-more:active
+	transform: scale(0.98)
+
+
+
+.button-right, .button-left
+	width: 48px
+	height: 48px
+	border-radius: 24px
+	background-color: #000
+	border: 0
+	font-size: 22px
+	color: #fff
+	cursor: pointer
+.button-right:focus, .button-right:hover, .button-left:focus, .button-left:hover
+	animation: pulse .2s
+.button-right:active, .button-left:active
+	transform: scale(0.96)
+@keyframes pulse
+	0%
+		transform: scale(1.05)
+	50%
+		transform: scale(0.95)
+	100%
+		transform: scale(1)
+
+
+
+@media screen and (max-width: 768px) 
+	.button-more
+		padding: 15px 30px
+		font-size: 14px
+		line-height: 18px
+
+
+@media screen and (max-width: 576px) 
+	.button-close
+		font-size: 30px
+
+	.button-more
+		padding: 10px 20px
+		border-radius: 2px
+		font-size: 12px
+		line-height: 14px
+
+	.button-right, .button-left
+		width: 34px
+		height: 34px
+		border-radius: 18px
+		font-size: 18px

@@ -1,0 +1,36 @@
+.team 
+	background-color: #fff
+	padding: 40px 20px
+	border-bottom: 1px solid #d8dbde
+
+.team-wrapper 
+	max-width: 1304px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.team-container
+	width: 100%
+	margin-right: auto
+	display: grid
+	grid-template-columns: repeat(2, 1fr) 100px
+
+
+
+@media screen and (max-width: 768px) 
+	.team-container
+		grid-template-columns: 1fr
+		justify-items: center
+
+	.team-title 
+		margin-bottom: 10px
+
+	.team-paragraph 
+		text-align: center
+
+
+	
+@media screen and (max-width: 576px) 
+	.team
+		padding: 10px 20px
